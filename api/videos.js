@@ -25,15 +25,18 @@ export const createVideos = async (video) => {
 };
 
 export const updateVideos = async (video) => {
-    const response = await fetch(`${URL}/video/${id}?_method=PATCH`, {
+  
+    const response = await fetch(`${URL}/video/${video.id}?_method=PATCH`, {  
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
         },
-        body: JSON.stringify(video),
+        body: JSON.stringify(video),  
     });
+
     return response.json();
 };
+
 
 export const deleteVideos = async (id) => {
     const response = await fetch(`${URL}/video/${id}?_method=DELETE`, {

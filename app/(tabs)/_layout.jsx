@@ -14,7 +14,7 @@ const pages = [
       page:"add_post",
       title:"Add Story",
       icon:"add",
-      header:"Add Post/Video",
+      header:"Add Post",
     },
     {
         page:"Video",
